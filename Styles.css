@@ -1,0 +1,206 @@
+:root {
+    --color-1: #191919;
+    --color-2: #29292a;
+    --color-3: #443a3b;
+    --color-4: #cd0a0c;
+    --color-5: #ffe02f;
+    --color-6: #ecd7d7;
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    color: white;
+}
+
+body {
+    background: radial-gradient(circle at 50% -50%,
+            var(--color-2),
+            var(--color-1));
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: white 1px solid;
+    border-radius: 22px;
+    width: 60%;
+    margin: 23px auto;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: auto;
+    padding: 17px 28px;
+    gap: 16px;
+    margin: 0;
+}
+
+.Logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 29px;
+    width: 132px;
+    height: 70px;
+}
+
+.NavButton {
+    display: flex;
+    border: solid 0px transparent;
+    border-width: 2px;
+    border-bottom-width: 5px;
+    border-radius: 40px;
+    width: auto;
+    height: auto;
+    padding: 12px 27px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    transition: all 0.3s ease;
+
+}
+
+.NavButton:hover {
+    border-color: white;
+    transform: translateY(-2px);
+}
+
+.NavButton:active {
+    transform: translateY(2px);
+    border-bottom-width: 2px;
+}
+
+.Hero {
+    display: flex;
+    flex-direction: column;
+    gap: 41px;
+    width: 70vw;
+    min-height: 100vh;
+    margin: auto;
+}
+
+.Pfp {
+    width: 344px;
+    height: fit-content;
+    transform: scaleX(-1);
+}
+
+.Greeting {
+    font-weight: normal;
+    font-size: 43px;
+    font-family: "Pixelify Sans", sans-serif;
+    color: var(--color-4);
+}
+
+.DevTittle,
+.Fullstack {
+    color: white;
+    font-weight: 700;
+    font-size: 73px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.Fullstack {
+    color: var(--color-4);
+}
+
+.MainText h1 span {
+    display: flex;
+    flex-direction: column;
+    line-height: 70px;
+    text-align: left;
+
+}
+
+.MainText {
+    width: 60%;
+
+}
+
+.Profile {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 15vh;
+}
+
+.Description {
+    color: var(--color-6);
+    font-weight: 400;
+}
+
+.Description,
+.Description span {
+    font-family: "Inter", sans-serif;
+    font-size: 23px;
+    text-align: left;
+    line-height: 28px;
+    letter-spacing: 7%;
+}
+
+.WhiteText {
+    color: white;
+    font-weight: 700;
+}
+
+.YellowText {
+    color: var(--color-5);
+    font-weight: 700;
+}
+.Buttons{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 26px;
+    width: 95%;
+    height: auto;
+    padding: 13px 16px;
+    margin: 0 auto;
+}
+.MainButton{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    padding: 18px;
+    border: var(--color-4) solid 2px;
+    color: var(--color-4);
+    border-radius: 6px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    transition: all 0.3s ease;
+}
+.MainButton:hover{
+background-color: var(--color-4);
+color: var(--color-1);
+padding: 18px 36px;
+}
+.SocialButton{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    padding: 12px;
+    border: var(--color-6) solid 2px;
+    color: var(--color-6);
+    border-radius: 2px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    transition: all 0.3s ease;
+}
+.SocialButton:hover{
+    border-bottom-width: 5px;
+    border-right-width: 5px;
+    transform: translateY(-3px);
+}
