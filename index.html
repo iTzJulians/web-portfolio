@@ -63,9 +63,9 @@
                 </nav>
                 <div
                     class="flex py-3 w-full sm:w-3/4 md:w-2/4 items-center gap-2 text-white before:h-px before:flex-1 before:bg-white after:h-px after:flex-1 after:bg-white">
-                    <span class="font-mono">Inicio</span>
+                    <h1 class="font-mono">Inicio</h1>
                 </div>
-                <div class=" max-w-[350px] h-full flex flex-col justify-start items-center
+                <div class="hidden max-w-[350px] h-full flex flex-col justify-start items-center
                 sm:max-w-full
                 md:flex-row md:justify-center
                 md:items-center gap-3 " id="content">
@@ -304,11 +304,97 @@
                         </div>
                     </div>
                 </div>
-                <div class=" hidden max-w-[350px] h-full flex flex-col justify-start items-center
-                sm:max-w-full
-                md:flex-row md:justify-center
-                md:items-center gap-3 " id="content">
-                
+                <div class=" max-w-[350px] h-full flex flex-col justify-start items-center
+                sm:min-w-full
+                md:flex-row md:justify-center md:items-center md:max-w-full
+                lg:max-w-full gap-3 " id="content">
+                    <aside class="w-full md:w-80 bg-black/30 flex flex-col rounded-lg border-2 border-white p-6 gap-6">
+                        <div class="flex flex-col w-full gap-4">
+                            <pre class="font-mono text-blue-300 font-extrabold text-[8px] leading-[8px]">
+  _____        __       
+  \_   \_ __  / _| ___  
+   / /\/ '_ \| |_ / _ \ 
+/\/ /_ | | | |  _| (_) |
+\____/ |_| |_|_|  \___/ </pre>
+                            <div class="font-mono text-white font-semibold">
+                                <h2>
+                                    Julian Castellanos <span class="text-gray-500 font-light">• Name</span>
+                                </h2>
+                                <br>
+                                <h2>
+                                    Fullstack developer <span class="text-gray-500 font-light">• Role</span>
+                                </h2>
+                                <br>
+                                <h2>
+                                    Colombia <span class="text-gray-500 font-light">• Location</span>
+                                </h2>
+                            </div>
+                        </div>
+
+                        <div class="bg-white w-11/12 h-px self-center"></div>
+
+                        <div class="flex flex-col w-full gap-4">
+                            <pre class="font-mono text-blue-300 font-extrabold text-[8px] leading-[8px]"> __           _   _             
+/ _\ ___  ___| |_(_) ___  _ __  
+\ \ / _ \/ __| __| |/ _ \| '_ \ 
+_\ \  __/ (__| |_| | (_) | | | |
+\__/\___|\___|\__|_|\___/|_| |_|
+                                        </pre>
+                            <nav class="text-white font-mono">
+                                <ul class="flex flex-col justify-center items-center gap-1">
+                                    <button type="button"
+                                        class="px-3 py-2 hover:bg-white/15 w-full rounded-sm flex text-start">
+                                        About
+                                    </button>
+                                    <button type="button"
+                                        class="px-3 py-2 hover:bg-white/15 w-full rounded-sm flex text-start">
+                                        Experience
+                                    </button>
+                                    <button type="button"
+                                        class="px-3 py-2 hover:bg-white/15 w-full rounded-sm flex text-start">
+                                        Skills
+                                    </button>
+                                </ul>
+                            </nav>
+                        </div>
+                    </aside>
+                    <section id="aboutMe"
+                        class="bg-black/30 border-2 border-white rounded-sm p-1 w-full max-w-3xl text-[11px] leading-4 sm:text-sm sm:leading-6 md:text-base md:leading-7">
+                        <div class="grid grid-cols-[auto_1fr] items-start overflow-x-auto pl4">
+                            <span class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">1</span>
+                            <span class="font-mono text-white whitespace-nowrap"><span class="text-blue-400 pl-2">&lt;div</span> <span class="text-cyan-200">class=</span><span class="text-orange-300">"about-me"</span><span class="text-blue-400">&gt;</span></span>
+                            <span class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">2</span>
+                            <span class="font-mono text-white whitespace-nowrap"><span class="text-blue-400 pl-8">&lt;p&gt;</span></span>
+                            <span class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">3</span>
+                            <span class="font-mono text-white whitespace-nowrap"><span class="pl-12">Soy un desarrollador web enfocado en crear aplicaciones</span></span>
+                            <span class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">4</span>
+                            <span class="font-mono text-white whitespace-nowrap"><span class="pl-12">funcionales, intuitivas y atractivas, combinando sólidos</span></span>
+                            <span class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">5</span>
+                            <span class="font-mono text-white whitespace-nowrap"><span class="pl-12">conocimientos de programación con una visión orientada a</span></span>
+                            <span class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">6</span>
+                            <span class="font-mono text-white whitespace-nowrap"><span class="pl-12">crear soluciones centradas en las necesidades del usuario.</span></span>
+                            <span class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">7</span>
+                            <span class="font-mono text-white whitespace-nowrap"><span class="pl-12">Me caracterizo por buscar comprender el porqué detrás de</span></span>
+                            <span class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">8</span>
+                            <span class="font-mono text-white whitespace-nowrap"><span class="pl-12">las tecnologías y soluciones que utilizo, en lugar de</span></span>
+                            <span class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">9</span>
+                            <span class="font-mono text-white whitespace-nowrap"><span class="pl-12">limitarme únicamente a aplicarlas, lo que me permite</span></span>
+                            <span class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">10</span>
+                            <span class="font-mono text-white whitespace-nowrap"><span class="pl-12">aprender de forma más sólida y adaptarme constantemente a</span></span>
+                            <span class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">11</span>
+                            <span class="font-mono text-white whitespace-nowrap"><span class="pl-12">nuevas herramientas y tecnologías. Disfruto enfrentar</span></span>
+                            <span class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">12</span>
+                            <span class="font-mono text-white whitespace-nowrap"><span class="pl-12">problemas, analizar diferentes soluciones y transformar</span></span>
+                            <span class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">13</span>
+                            <span class="font-mono text-white whitespace-nowrap"><span class="pl-12">ideas en productos digitales que aporten valor y ofrezcan</span></span>
+                            <span class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">14</span>
+                            <span class="font-mono text-white whitespace-nowrap"><span class="pl-12">una buena experiencia al usuario.</span></span>
+                            <span class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">15</span>
+                            <span class="font-mono text-white whitespace-nowrap"><span class="pl-8 text-blue-400">&lt;/p&gt;</span></span>
+                            <span class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">16</span>
+                            <span class="font-mono text-white whitespace-nowrap"><span class="text-blue-400 pl-2">&lt;/div&gt;</span></span>
+                        </div>
+                    </section>
                 </div>
             </main>
         </div>
