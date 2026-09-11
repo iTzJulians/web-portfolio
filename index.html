@@ -12,9 +12,10 @@
 <body>
     <div class="w-screen h-screen bg-[url('./assets/Bg.png')] bg-cover bg-no-repeat" )>
         <div class="bg-black/70 w-full h-full backdrop-blur-sm p-6">
-            <main class="flex flex-col justify-between items-center w-full h-full border-1 border-white rounded-lg p-6">
-                <nav class=" py-1 px-8 border-2 border-white rounded-lg text-white">
-                    <ul class="flex flex-row justify-center items-center gap-14">
+            <main
+                class="flex flex-col justify-between items-center w-full h-full border-1 border-white rounded-lg p-6 overflow-hidden overflow-y-auto">
+                <nav class="py-1 px-3 sm:px-6 md:px-8 border-2 border-white rounded-lg text-white">
+                    <ul class="flex flex-row justify-center items-center gap-4 sm:gap-8 md:gap-14">
                         <li>
                             <a href="">
                                 <svg width="28" height="28">
@@ -61,12 +62,20 @@
                     </ul>
                 </nav>
                 <div
-                    class="flex py-3 w-2/4 items-center gap-2 text-white before:h-px before:flex-1 before:bg-white after:h-px after:flex-1 after:bg-white">
+                    class="flex py-3 w-full sm:w-3/4 md:w-2/4 items-center gap-2 text-white before:h-px before:flex-1 before:bg-white after:h-px after:flex-1 after:bg-white">
                     <span class="font-mono">Inicio</span>
                 </div>
-                <div class="w-screen h-screen flex gap-3 justify-center items-center" id="content">
+                <div class=" max-w-[350px] h-full flex flex-col justify-start items-center
+                sm:max-w-full
+                md:flex-row md:justify-center
+                md:items-center gap-3 " id="content">
                     <div class="border-3 border-white rounded-lg p-1">
-                        <pre class="block text-[3px] leading-[1.5px] sm:text-[4px] sm:leading-[2px] text-white">
+                        <pre class="block text-[3px] leading-[1.5px]
+                        sm:text-[3.5px] sm:leading-[1.7px]
+                        md:text-[3px] md:leading-[1.5px]
+                        lg:text-[4px] lg:leading-[2px]
+                        font-extrabold
+                        text-white">
 ########*::::::::::::::::::::::+*###############################################################################################################################
 #######**::::::::::::::::::::::+*###############################################################################################################################
 ########+::::::::::::::::::::::-+###############################################################################################################################
@@ -228,6 +237,78 @@
 ###############*::::::::::::::::::::::.::..::::.............::.::::*#:.::.....::::.::..........:*#=.::..::.::::::::::..:.....::.:.::::::............-+##########
 ###############++:::::::::::::::::::::::::..::::............::.::::##=.::......:::::::.:.:.....:##::::...:.::::::::::....:...:....:...:..........:..*###########</pre>
                     </div>
+                    <div class="flex flex-col h-auto
+                    md:max-w-[450px]
+                    lg:max-w-[600px]
+                     px-6 text-white">
+                        <span class="font-mono text-2xl">¡Hola! soy Julian</span>
+                        <pre class="font-mono text-[4px] leading-[4px]
+                        sm:text-[8px] sm:leading-[8px]
+                        md:text-[6px] md:leading-[6px]
+                        lg:text-[8px] lg:leading-[8px]
+                        tracking-normal">
+@@@@@@@   @@@@@@@@   @@@@@@    @@@@@@   @@@@@@@   @@@@@@@    @@@@@@   @@@       @@@        @@@@@@   @@@@@@@    @@@@@@   @@@@@@@   
+@@@@@@@@  @@@@@@@@  @@@@@@@   @@@@@@@@  @@@@@@@@  @@@@@@@@  @@@@@@@@  @@@       @@@       @@@@@@@@  @@@@@@@@  @@@@@@@@  @@@@@@@@  
+@@!  @@@  @@!       !@@       @@!  @@@  @@!  @@@  @@!  @@@  @@!  @@@  @@!       @@!       @@!  @@@  @@!  @@@  @@!  @@@  @@!  @@@  
+!@!  @!@  !@!       !@!       !@!  @!@  !@!  @!@  !@!  @!@  !@!  @!@  !@!       !@!       !@!  @!@  !@!  @!@  !@!  @!@  !@!  @!@  
+@!@  !@!  @!!!:!    !!@@!!    @!@!@!@!  @!@!!@!   @!@!!@!   @!@  !@!  @!!       @!!       @!@!@!@!  @!@  !@!  @!@  !@!  @!@!!@!   
+!@!  !!!  !!!!!:     !!@!!!   !!!@!!!!  !!@!@!    !!@!@!    !@!  !!!  !!!       !!!       !!!@!!!!  !@!  !!!  !@!  !!!  !!@!@!    
+!!:  !!!  !!:            !:!  !!:  !!!  !!: :!!   !!: :!!   !!:  !!!  !!:       !!:       !!:  !!!  !!:  !!!  !!:  !!!  !!: :!!   
+:!:  !:!  :!:           !:!   :!:  !:!  :!:  !:!  :!:  !:!  :!:  !:!   :!:       :!:      :!:  !:!  :!:  !:!  :!:  !:!  :!:  !:!  
+ :::: ::   :: ::::  :::: ::   ::   :::  ::   :::  ::   :::  ::::: ::   :: ::::   :: ::::  ::   :::   :::: ::  ::::: ::  ::   :::  
+:: :  :   : :: ::   :: : :     :   : :   :   : :   :   : :   : :  :   : :: : :  : :: : :   :   : :  :: :  :    : :  :    :   : :
+<span class="text-yellow-300">
+@@@@@@@@  @@@  @@@  @@@       @@@        @@@@@@   @@@@@@@   @@@@@@    @@@@@@@  @@@  @@@
+@@@@@@@@  @@@  @@@  @@@       @@@       @@@@@@@   @@@@@@@  @@@@@@@@  @@@@@@@@  @@@  @@@
+@@!       @@!  @@@  @@!       @@!       !@@         @@!    @@!  @@@  !@@       @@!  !@@
+!@!       !@!  @!@  !@!       !@!       !@!         !@!    !@!  @!@  !@!       !@!  @!!
+@!!!:!    @!@  !@!  @!!       @!!       !!@@!!      @!!    @!@!@!@!  !@!       @!@@!@!
+!!!!!:    !@!  !!!  !!!       !!!        !!@!!!     !!!    !!!@!!!!  !!!       !!@!!!
+!!:       !!:  !!!  !!:       !!:            !:!    !!:    !!:  !!!  :!!       !!: :!!
+:!:       :!:  !:!   :!:       :!:          !:!     :!:    :!:  !:!  :!:       :!:  !:!
+ ::       ::::: ::   :: ::::   :: ::::  :::: ::      ::    ::   :::   ::: :::   ::  :::
+ :         : :  :   : :: : :  : :: : :  :: : :       :      :   : :   :: :: :   :   :::
+</span>                                                                                                                                  
+</pre>
+                        <p class="font-mono w-full text-xl">Construyo aplicaciones web completas utilizando Java,
+                            Javascript y
+                            tecnologias modernas para
+                            <span class="text-yellow-300">Frontend</span> y <span
+                                class="text-yellow-300">Backend.</span> <br>
+                            Bogotá, Colombia
+                        </p>
+                        <div class="flex flex-wrap gap-2 w-full p-2 items-center justify-center
+                        lg:gap-7 lg:justify-start">
+                            <a href="#projects" class="px-8 py-5 border-3 border-white rounded-s
+                             flex w-full justify-center
+                             md:w-full
+                             lg:w-auto">
+                                <span class="font-mono font-bold text-lg">Proyectos</span>
+                            </a>
+                            <a href="#about-me" class="px-6 py-1 rounded-2xl bg-white/15 flex justify-center items-center h-14
+                            sm:w-full
+                            md:w-full
+                             lg:w-auto">
+                                <span class="font-mono font-bold text-lg">Sobre mí</span>
+                            </a>
+                            <a href="#github" class="p-2 rounded-2xl bg-white/15 flex justify-center items-center h-14">
+                                <svg width="40" height="40">
+                                    <use href="/assets/sprite.svg#github"></use>
+                                </svg>
+                            </a>
+                            <a href="#github" class="p-2 rounded-2xl bg-white/15 flex justify-center items-center h-14">
+                                <svg width="40" height="40">
+                                    <use href="/assets/sprite.svg#linkedin"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" hidden max-w-[350px] h-full flex flex-col justify-start items-center
+                sm:max-w-full
+                md:flex-row md:justify-center
+                md:items-center gap-3 " id="content">
+                
                 </div>
             </main>
         </div>
