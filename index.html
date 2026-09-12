@@ -14,8 +14,10 @@
         <div class="bg-black/70 w-full h-full backdrop-blur-sm p-6">
             <main
                 class="flex flex-col justify-start items-center w-full h-full sm:border-1 border-white rounded-lg sm:p-6 overflow-hidden overflow-y-auto">
-                <nav class="py-1 px-3 sm:px-6 md:px-8 border-2 border-white rounded-lg text-white relative" id="mainNav">
-                    <div id="indicator" class="size-9 bg-white rounded-lg absolute transition-[left] duration-200 ease-in-out pointer-events-none invisible -z-10">
+                <nav class="py-1 px-3 sm:px-6 md:px-8 border-2 border-white rounded-lg text-white relative"
+                    id="mainNav">
+                    <div id="indicator"
+                        class="size-9 bg-white rounded-lg absolute transition-[left] duration-200 ease-in-out pointer-events-none invisible -z-10">
 
                     </div>
                     <ul class="flex flex-row justify-center items-center gap-4 sm:gap-8 md:gap-14">
@@ -28,28 +30,33 @@
 
                         </li>
                         <li>
-                            <a href="#home" class="navSection activeNav text-black flex w-auto h-auto p-1 transition-colors" data-target="home">
+                            <a href="#home"
+                                class="navSection activeNav text-black flex w-auto h-auto p-1 transition-colors"
+                                data-target="home">
                                 <svg width="28" height="28"">
                                     <use href=" ./assets/sprite.svg#home"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a href="#projects" class="navSection flex w-auto h-auto p-1 transition-colors" data-target="projects">
+                            <a href="#projects" class="navSection flex w-auto h-auto p-1 transition-colors"
+                                data-target="projects">
                                 <svg width="28" height="28">
                                     <use href="./assets/sprite.svg#folder"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a href="#about-me" class="navSection flex w-auto h-auto p-1 transition-colors" data-target="about-me">
+                            <a href="#about-me" class="navSection flex w-auto h-auto p-1 transition-colors"
+                                data-target="about-me">
                                 <svg width="28" height="28">
                                     <use href="./assets/sprite.svg#person"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a href="#contact" class="navSection flex w-auto h-auto p-1 transition-colors" data-target="contact">
+                            <a href="#contact" class="navSection flex w-auto h-auto p-1 transition-colors"
+                                data-target="contact">
                                 <svg width="28" height="28">
                                     <use href="./assets/sprite.svg#contact-book"></use>
                                 </svg>
@@ -73,7 +80,7 @@
                 md:flex-row md:justify-center
                 md:items-center gap-3 
                 transition-opacity duration-300 ease-in-out" id="home">
-                    <div class="border-3 border-white rounded-lg p-1">
+                    <div class="border-3 border-white rounded-lg p-1 bg-black">
                         <pre class="block text-[3px] leading-[1.5px]
                         sm:text-[3.5px] sm:leading-[1.7px]
                         md:text-[3px] md:leading-[1.5px]
@@ -346,25 +353,29 @@
 _\ \  __/ (__| |_| | (_) | | | |
 \__/\___|\___|\__|_|\___/|_| |_|
                                         </pre>
-                            <nav class="text-white font-mono">
+                            <nav class="text-white font-mono" id="navAbout">
                                 <ul class="flex flex-col justify-e items-center gap-1">
                                     <button type="button"
-                                        class="px-3 py-2 hover:bg-white/15 w-full rounded-sm flex justify-center sm:justify-start">
+                                        class="option px-3 py-2 hover:bg-white/15 w-full rounded-sm flex justify-center sm:justify-start "
+                                        data-option="about">
                                         About
                                     </button>
                                     <button type="button"
-                                        class="px-3 py-2 hover:bg-white/15 w-full rounded-sm flex justify-center sm:justify-start">
+                                        class="option px-3 py-2 hover:bg-white/15 w-full rounded-sm flex justify-center sm:justify-start"
+                                        data-option="experience">
                                         Experience
                                     </button>
                                     <button type="button"
-                                        class="px-3 py-2 hover:bg-white/15 w-full rounded-sm flex justify-center sm:justify-start">
+                                        class="option px-3 py-2 hover:bg-white/15 w-full rounded-sm flex justify-center sm:justify-start"
+                                        data-option="skills">
                                         Skills
                                     </button>
                                 </ul>
                             </nav>
                         </div>
                     </aside>
-                    <section id="aboutMe" class="bg-black/30 border-2 border-white rounded-sm p-1 w-full max-w-lg text-[11px] leading-6 tracking-[0.1px] pr-4 scrollbar-thumb-red-50
+                    <!-- ABOUT ME -->
+                    <section id="about" class=" bg-black/30 border-2 border-white rounded-sm p-1 w-full max-w-lg text-[11px] leading-6 tracking-[0.1px] pr-4 scrollbar-thumb-red-50
                         sm:text-xs sm:leading-6 
                         md:text-xs md:leading-6">
                         <div class="grid grid-cols-[auto_1fr] items-start overflow-x-auto pl4">
@@ -378,56 +389,294 @@ _\ \  __/ (__| |_| | (_) | | | |
                             <span
                                 class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">2</span>
                             <span class="font-mono text-white whitespace-nowrap pl-1"><span
-                                    class="text-blue-400 sm:pl-8">&lt;p&gt;</span></span>
+                                    class="text-blue-400 sm:pl-2">&lt;p&gt;</span></span>
                             <span
                                 class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">3</span>
-                            <span class="font-mono text-white whitespace-nowrap pl-1"><span class="sm:pl-12">Soy desarrollador de software enfocado en crear </span></span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span class="sm:pl-12">Soy
+                                    desarrollador de software enfocado en crear </span></span>
                             <span
                                 class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">4</span>
-                            <span class="font-mono text-white whitespace-nowrap pl-1"><span class="sm:pl-12">productos digitales funcionales, intuitivos y</span></span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span class="sm:pl-12">productos
+                                    digitales funcionales, intuitivos y</span></span>
                             <span
                                 class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">5</span>
-                            <span class="font-mono text-white whitespace-nowrap pl-1"><span class="sm:pl-12">atractivos, desde aplicaciones web hasta entornos</span></span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span class="sm:pl-12">atractivos,
+                                    desde aplicaciones web hasta entornos</span></span>
                             <span
                                 class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">6</span>
                             <span class="font-mono text-white whitespace-nowrap pl-1">
                                 <span class="sm:pl-12">interactivos.</span></span>
                             <span
-                                class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">7</span> <span class="font-mono text-white whitespace-nowrap pl-1">
-                                <span class="sm:pl-12">Me caracteriza entender el porqué de las tecnologías</span></span>
+                                class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">7</span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1">
+                                <span class="sm:pl-12">Me caracteriza entender el porqué de las
+                                    tecnologías</span></span>
                             <span
                                 class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">8</span>
-                            <span class="font-mono text-white whitespace-nowrap pl-1"><span class="sm:pl-12"> que uso, lo que me permite aprender</span></span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span class="sm:pl-12"> que uso,
+                                    lo que me permite aprender</span></span>
                             <span
                                 class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">9</span>
-                            <span class="font-mono text-white whitespace-nowrap pl-1"><span class="sm:pl-12">rápido y adaptarme a nuevas herramientas y entornos.</span></span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span class="sm:pl-12">rápido y
+                                    adaptarme a nuevas herramientas y entornos.</span></span>
                             <span
                                 class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">10</span>
-                            <span class="font-mono text-white whitespace-nowrap pl-1"><span class="sm:pl-12">Disfruto resolver problemas, evaluar alternativas</span></span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span class="sm:pl-12">Disfruto
+                                    resolver problemas, evaluar alternativas</span></span>
                             <span
                                 class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">11</span>
-                            <span class="font-mono text-white whitespace-nowrap pl-1"><span class="sm:pl-12">y convertir ideas en productos digitales que</span></span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span class="sm:pl-12">y convertir
+                                    ideas en productos digitales que</span></span>
                             <span
                                 class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">12</span>
-                            <span class="font-mono text-white whitespace-nowrap pl-1"><span class="sm:pl-12">generan valor, ya sea como aplicación</span></span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span class="sm:pl-12">generan
+                                    valor, ya sea como aplicación</span></span>
 
                             <span
                                 class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">13</span>
-                                <span class="font-mono text-white whitespace-nowrap pl-1"><span class="sm:pl-12">o como experiencia interactiva.</span></span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span class="sm:pl-12">o como
+                                    experiencia interactiva.</span></span>
 
                             <span
                                 class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">13</span>
                             <span class="font-mono text-white whitespace-nowrap pl-1"><span
-                                    class="sm:pl-8 text-blue-400">&lt;/p&gt;</span></span>
+                                    class="sm:pl-2 text-blue-400">&lt;/p&gt;</span></span>
                             <span
                                 class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">14</span>
                             <span class="font-mono text-white whitespace-nowrap pl-1"><span
                                     class="text-blue-400 sm:pl-2">&lt;/div&gt;</span></span>
                         </div>
                     </section>
+
+                    <!-- EXPERIENCIA -->
+                    <section id="experience" class="hidden bg-black/30 border-2 border-white rounded-sm p-1 w-full max-w-lg text-[11px] leading-6 tracking-[0.1px] pr-4 scrollbar-thumb-red-50
+                        sm:text-xs sm:leading-6 
+                        md:text-xs md:leading-6">
+                        <div class="grid grid-cols-[auto_1fr] items-start overflow-x-auto pl4">
+                            <span
+                                class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">1</span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span
+                                    class="text-red-400 sm:pl-2"># Experiencia Laboral</span></span>
+                            <span
+                                class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">2</span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span
+                                    class="text-blue-400 sm:pl-2"></span></span>
+                            <span
+                                class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">3</span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span
+                                    class="text-yellow-400 sm:pl-2">### Desarrollador Unity</span></span>
+                            <span
+                                class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">4</span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span
+                                    class="text-yellow-400 sm:pl-2">**Innovatech VR** | *Sep 2025 – Jun 2026*
+                                </span></span>
+                            <span
+                                class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">5</span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span class="text-white sm:pl-2">-
+                                    Desarrollo de aplicaciones VR, AR y MR para
+                                </span></span>
+                            <span
+                                class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">6</span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span
+                                    class="text-white sm:pl-2">formación en SST.</span></span>
+                            <span
+                                class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">7</span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span class="text-white sm:pl-2">-
+                                    Implementación de sistemas reutilizables integrados</span></span>
+                            <span
+                                class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">8</span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span
+                                    class="text-white sm:pl-2">en Meta XR.</span></span>
+                            <span
+                                class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">9</span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span class="text-white sm:pl-2">-
+                                    Trabajo en equipo multidisciplinario con Git y </span></span>
+                            <span
+                                class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">10</span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span
+                                    class="text-white sm:pl-2">metodologías ágiles.</span></span>
+                            <span
+                                class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">11</span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span
+                                    class="text-white sm:pl-2">---</span></span>
+                            <span
+                                class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">12</span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span
+                                    class="text-yellow-400 sm:pl-2">### Desarrollador de Videojuegos
+                                </span></span>
+                            <span
+                                class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">13</span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span
+                                    class="text-red-400 sm:pl-2">**Disruptive IT** | *Jul 2024 – May 2025*
+                                </span></span>
+                            <span
+                                class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">14</span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span class="text-white sm:pl-2">-
+                                    Creación de videojuego educativo multijugador de
+                                </span></span>
+                            <span
+                                class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">15</span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span
+                                    class="text-white sm:pl-2">cartas para matemáticas.
+                                </span></span>
+                            <span
+                                class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">16</span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span
+                                    class="text-white sm:pl-2">Producción de videojuego 2D enfocado en educación
+                                </span></span>
+                            <span
+                                class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">17</span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span
+                                    class="text-white sm:pl-2">ambiental.
+                                </span></span>
+                            <span
+                                class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">18</span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span class="text-white sm:pl-2">-
+                                    Coordinación técnica con Git y metodologías ágiles.</span></span>
+                            <span
+                                class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">19</span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span class="text-white sm:pl-2">
+                                    *SENASOFT 2024:* 1.er puesto en la categoría</span></span><span
+                                class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">20</span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span
+                                    class="text-red-300 sm:pl-2">
+                                    Realidad Extendida.</span></span>
+
+                        </div>
+                    </section>
+                    <!-- SKILLS -->
+                    <section id="skills" class="hidden bg-black/30 border-2  border-white rounded-sm p-3  max-h-[480px] min-w-lg text-[11px] leading-6 tracking-[0.1px] flex flex-col justify-start items-center gap-2
+                        sm:text-xs sm:leading-6 
+                        md:text-xs md:leading-6">
+                        <header
+                            class="font-mono text-white font-bold grid grid-cols-3 gap-20 px-5 py-3 w-full border-2 border-white text-start rounded-md">
+                            <span>Skill</span>
+                            <span>Level</span>
+                            <span>Category</span>
+                        </header>
+                        <div
+                            class="items-container flex flex-col justify-center items-center gap-auto overflow-y-auto text-white font-mono font-light w-full">
+                            <div
+                                class="item grid grid-cols-3 gap-20 w-full p-3 rounded-md hover:bg-white/15 transition-colors duration-200 ease-in">
+                                <div class="skill">
+                                    <span>
+                                        1.
+                                    </span>
+                                    <span>
+                                        HTML/CSS
+                                    </span>
+                                </div>
+                                <span>Proficency</span>
+                                <span class="text-gray-400">Frontend</span>
+
+                            </div>
+                            <div
+                                class="item grid grid-cols-3 gap-20 w-full p-3 rounded-md hover:bg-white/15 transition-colors duration-200 ease-in">
+                                <div class="skill">
+                                    <span>
+                                        2.
+                                    </span>
+                                    <span>
+                                        Javascript
+                                    </span>
+                                </div>
+                                <span>Proficency</span>
+                                <span class="text-gray-400">Frontend</span>
+
+                            </div>
+                            <div
+                                class="item grid grid-cols-3 gap-20 w-full p-3 rounded-md hover:bg-white/15 transition-colors duration-200 ease-in">
+                                <div class="skill">
+                                    <span>
+                                        3.
+                                    </span>
+                                    <span>
+                                        PostgreSQL
+                                    </span>
+                                </div>
+                                <span>Proficency</span>
+                                <span class="text-gray-400">Data base</span>
+
+                            </div>
+                            <div
+                                class="item grid grid-cols-3 gap-20 w-full p-3 rounded-md hover:bg-white/15 transition-colors duration-200 ease-in">
+                                <div class="skill">
+                                    <span>
+                                        4.
+                                    </span>
+                                    <span>
+                                        Java
+                                    </span>
+                                </div>
+                                <span>Intermediate</span>
+                                <span class="text-gray-400">Backend</span>
+
+                            </div>
+                            <div
+                                class="item grid grid-cols-3 gap-20 w-full p-3 rounded-md hover:bg-white/15 transition-colors duration-200 ease-in">
+                                <div class="skill">
+                                    <span>
+                                        5.
+                                    </span>
+                                    <span>
+                                        C#
+                                    </span>
+                                </div>
+                                <span>Proficency</span>
+                                <span class="text-gray-400">Backend/Game dev</span>
+
+                            </div>
+                            <div
+                                class="item grid grid-cols-3 gap-20 w-full p-3 rounded-md hover:bg-white/15 transition-colors duration-200 ease-in">
+                                <div class="skill">
+                                    <span>
+                                        6.
+                                    </span>
+                                    <span>
+                                        Spring
+                                    </span>
+                                </div>
+                                <span>Intermediate</span>
+                                <span class="text-gray-400">Backend</span>
+
+                            </div>
+                            <div
+                                class="item grid grid-cols-3 gap-20 w-full p-3 rounded-md hover:bg-white/15 transition-colors duration-200 ease-in">
+                                <div class="skill">
+                                    <span>
+                                        7.
+                                    </span>
+                                    <span>
+                                        Unity
+                                    </span>
+                                </div>
+                                <span>Proficency</span>
+                                <span class="text-gray-400">Game dev</span>
+
+                            </div>
+                            <div
+                                class="item grid grid-cols-3 gap-20 w-full p-3 rounded-md hover:bg-white/15 transition-colors duration-200 ease-in">
+                                <div class="skill">
+                                    <span>
+                                        8.
+                                    </span>
+                                    <span>
+                                        Tailwind
+                                    </span>
+                                </div>
+                                <span>Proficency</span>
+                                <span class="text-gray-400">Frontend</span>
+
+                            </div>
+                            
+                            </div>
+                        </div>
                 </div>
-            </main>
+
+                </section>
         </div>
+        </main>
+    </div>
     </div>
 </body>
 
