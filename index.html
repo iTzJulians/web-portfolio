@@ -22,16 +22,16 @@
                     </div>
                     <ul class="flex flex-row justify-center items-center gap-4 sm:gap-8 md:gap-14">
                         <li>
-                            <button type="button">
+                            <button type="button" id="navPrev" class="hover:bg-white/15 rounded-sm p-1 transition-colors">
                                 <svg width="28" height="28">
-                                    <use href="/assets/sprite.svg#chevron-left"></use>
+                                    <use href="./assets/sprite.svg#chevron-left"></use>
                                 </svg>
                             </button>
 
                         </li>
                         <li>
                             <a href="#home"
-                                class="navSection activeNav text-black flex w-auto h-auto p-1 transition-colors"
+                                class="navSection activeNav text-black flex w-auto h-auto p-1 transition-colors hover:bg-white/15 rounded-lg"
                                 data-target="home">
                                 <svg width="28" height="28"">
                                     <use href=" ./assets/sprite.svg#home"></use>
@@ -39,7 +39,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#projects" class="navSection flex w-auto h-auto p-1 transition-colors"
+                            <a href="#projects" class="navSection flex w-auto h-auto p-1 transition-colors hover:bg-white/15 rounded-lg"
                                 data-target="projects">
                                 <svg width="28" height="28">
                                     <use href="./assets/sprite.svg#folder"></use>
@@ -47,7 +47,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#about-me" class="navSection flex w-auto h-auto p-1 transition-colors"
+                            <a href="#about-me" class="navSection flex w-auto h-auto p-1 transition-colors hover:bg-white/15 rounded-lg"
                                 data-target="about-me">
                                 <svg width="28" height="28">
                                     <use href="./assets/sprite.svg#person"></use>
@@ -55,7 +55,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#contact" class="navSection flex w-auto h-auto p-1 transition-colors"
+                            <a href="#contact" class="navSection flex w-auto h-auto p-1 transition-colors hover:bg-white/15 rounded-lg"
                                 data-target="contact">
                                 <svg width="28" height="28">
                                     <use href="./assets/sprite.svg#contact-book"></use>
@@ -63,7 +63,7 @@
                             </a>
                         </li>
                         <li>
-                            <button type="button">
+<button type="button" id="navNext" class="hover:bg-white/15 rounded-sm p-1 transition-colors">
                                 <svg width="28" height="28">
                                     <use href="./assets/sprite.svg#chevron-right"></use>
                                 </svg>
@@ -85,7 +85,7 @@
                         sm:text-[3.5px] sm:leading-[1.7px]
                         md:text-[3px] md:leading-[1.5px]
                         lg:text-[4px] lg:leading-[2px]
-                        font-extrabold
+                        font-normal
                         text-white">
 ########*::::::::::::::::::::::+*###############################################################################################################################
 #######**::::::::::::::::::::::+*###############################################################################################################################
@@ -293,26 +293,39 @@
                             <a href="#projects" class="px-8 py-5 border-3 border-white rounded-s
                              flex w-full justify-center
                              md:w-full
-                             lg:w-auto">
+                             lg:w-auto
+                             hover:bg-white/10 transition-colors">
                                 <span class="font-mono font-bold text-lg">Proyectos</span>
                             </a>
                             <a href="#about-me" class="px-6 py-1 rounded-2xl bg-white/15 flex justify-center items-center h-14
                             sm:w-full
                             md:w-full
-                             lg:w-auto">
+                             lg:w-auto
+                             hover:bg-white/30 transition-colors">
                                 <span class="font-mono font-bold text-lg">Sobre mí</span>
                             </a>
-                            <a href="#github" class="p-2 rounded-2xl bg-white/15 flex justify-center items-center h-14">
+                            <a href="https://github.com/iTzJulians" target="_blank" rel="noopener noreferrer" class="p-2 rounded-2xl bg-white/15 flex justify-center items-center h-14
+                                hover:bg-white/30 transition-colors">
                                 <svg width="40" height="40">
-                                    <use href="/assets/sprite.svg#github"></use>
+                                    <use href="./assets/sprite.svg#github"></use>
                                 </svg>
                             </a>
-                            <a href="#github" class="p-2 rounded-2xl bg-white/15 flex justify-center items-center h-14">
+                            <a href="https://www.linkedin.com/in/julian-castellanos-/" target="_blank" rel="noopener noreferrer" class="p-2 rounded-2xl bg-white/15 flex justify-center items-center h-14
+                                hover:bg-white/30 transition-colors">
                                 <svg width="40" height="40">
-                                    <use href="/assets/sprite.svg#linkedin"></use>
+                                    <use href="./assets/sprite.svg#linkedin"></use>
                                 </svg>
                             </a>
                         </div>
+                    </div>
+                </div>
+                <div class="hidden max-w-full min-w-52 h-auto flex flex-col justify-start items-center opacity-0 
+                sm:max-w-full
+                md:flex-row md:justify-center md:items-center md:max-w-full
+                lg:max-w-full gap-3 
+                transition-opacity duration-300 ease-in-out" id="projects">
+                    <div class="bg-black/30 border-2 border-white rounded-lg p-6 w-full max-w-lg font-mono text-white flex flex-col gap-4">
+                        
                     </div>
                 </div>
                 <div class="hidden max-w-full min-w-52 h-auto flex flex-col justify-start items-center opacity-0 

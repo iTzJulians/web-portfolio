@@ -1,8 +1,10 @@
 
 const indicator = document.getElementById("indicator");
+const sectionTitle = document.getElementById("section-tittle");
 const nav = document.getElementById("mainNav");
 const homePage = document.querySelector("#home");
 const aboutMePage = document.querySelector("#about-me");
+const projectsPage = document.querySelector("#projects");
 const about = document.querySelector("#about");
 const experience = document.querySelector("#experience");
 const skills = document.querySelector("#skills");
@@ -61,28 +63,74 @@ function transitionAbout(nextAbout) {
 window.addEventListener("resize", () => {
     updateIndicator();
 });
+
+function navigateTo(target) {
+    const next = nav.querySelector('[data-target="' + target + '"]');
+    if (!next || next === active) { return; }
+
+    indicator.style.left = next.offsetLeft + 'px';
+    active.classList.remove("activeNav");
+    active.classList.remove("text-black");
+    active = next;
+    active.classList.add("activeNav");
+    active.classList.add("text-black");
+
+    switch (target) {
+        case "about-me": {
+            transitionMain(currentPage, aboutMePage);
+            break;
+        }
+        case "home": {
+            transitionMain(currentPage, homePage);
+            break;
+        }
+        case "projects": {
+            transitionMain(currentPage, projectsPage);
+            break;
+        }
+    }
+
+    sectionTitle.textContent = {
+        "home": "Inicio",
+        "projects": "Proyectos",
+        "about-me": "Sobre mí",
+        "contact": "Contacto",
+    }[target] || "Inicio";
+}
+
 nav.addEventListener("click", (e) => {
     const target = e.target.closest(".navSection");
     if (target) {
-        indicator.style.left = target.offsetLeft + 'px'
-        active.classList.remove("activeNav");
-        active.classList.remove("text-black")
-        active = target;
-        active.classList.add("activeNav");
-        active.classList.add("text-black")
-
-        switch (target.getAttribute("data-target")) {
-            case "about-me": {
-                transitionMain(currentPage, aboutMePage);
-                break;
-            }
-            case "home": {
-                transitionMain(currentPage, homePage);
-                break;
-            }
+        const next = target.getAttribute("data-target");
+        if (location.hash.slice(1) === next) {
+            navigateTo(next);
         }
     }
 });
+
+window.addEventListener("hashchange", () => {
+    navigateTo(location.hash.slice(1) || "home");
+});
+
+const sections = ["home", "projects", "about-me", "contact"];
+
+function cycleSection(step) {
+    const current = location.hash.slice(1);
+    let index = sections.indexOf(current);
+    if (index === -1) { index = 0; }
+    index = (index + step + sections.length) % sections.length;
+    location.hash = sections[index];
+}
+
+document.getElementById("navNext").addEventListener("click", () => {
+    cycleSection(1);
+});
+
+document.getElementById("navPrev").addEventListener("click", () => {
+    cycleSection(-1);
+});
+
+navigateTo(location.hash.slice(1) || "home");
 navAbout.addEventListener("click", (e) => {
     const target = e.target.closest(".option");
     console.log(target.getAttribute("data-option"));
