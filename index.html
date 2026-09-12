@@ -6,69 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio web</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
+    <script type="module" src="main.js"></script>
 </head>
 
 <body>
     <div class="w-screen h-screen bg-[url('./assets/Bg.png')] bg-cover bg-no-repeat" )>
         <div class="bg-black/70 w-full h-full backdrop-blur-sm p-6">
             <main
-                class="flex flex-col justify-between items-center w-full h-full border-1 border-white rounded-lg p-6 overflow-hidden overflow-y-auto">
-                <nav class="py-1 px-3 sm:px-6 md:px-8 border-2 border-white rounded-lg text-white">
+                class="flex flex-col justify-start items-center w-full h-full sm:border-1 border-white rounded-lg sm:p-6 overflow-hidden overflow-y-auto">
+                <nav class="py-1 px-3 sm:px-6 md:px-8 border-2 border-white rounded-lg text-white relative" id="mainNav">
+                    <div id="indicator" class="size-9 bg-white rounded-lg absolute transition-[left] duration-200 ease-in-out pointer-events-none invisible -z-10">
+
+                    </div>
                     <ul class="flex flex-row justify-center items-center gap-4 sm:gap-8 md:gap-14">
                         <li>
-                            <a href="">
+                            <button type="button">
                                 <svg width="28" height="28">
                                     <use href="/assets/sprite.svg#chevron-left"></use>
                                 </svg>
-                            </a>
+                            </button>
 
                         </li>
                         <li>
-                            <a href="" class="flex w-auto h-auto p-1 rounded-md bg-white text-black">
+                            <a href="#home" class="navSection activeNav text-black flex w-auto h-auto p-1 transition-colors" data-target="home">
                                 <svg width="28" height="28"">
                                     <use href=" ./assets/sprite.svg#home"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="#projects" class="navSection flex w-auto h-auto p-1 transition-colors" data-target="projects">
                                 <svg width="28" height="28">
                                     <use href="./assets/sprite.svg#folder"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="#about-me" class="navSection flex w-auto h-auto p-1 transition-colors" data-target="about-me">
                                 <svg width="28" height="28">
                                     <use href="./assets/sprite.svg#person"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="#contact" class="navSection flex w-auto h-auto p-1 transition-colors" data-target="contact">
                                 <svg width="28" height="28">
                                     <use href="./assets/sprite.svg#contact-book"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <button type="button">
                                 <svg width="28" height="28">
                                     <use href="./assets/sprite.svg#chevron-right"></use>
                                 </svg>
-                            </a>
+                            </button>
                         </li>
                     </ul>
                 </nav>
                 <div
                     class="flex py-3 w-full sm:w-3/4 md:w-2/4 items-center gap-2 text-white before:h-px before:flex-1 before:bg-white after:h-px after:flex-1 after:bg-white">
-                    <h1 class="font-mono">Inicio</h1>
+                    <h1 id="section-tittle" class="font-mono">Inicio</h1>
                 </div>
-                <div class="hidden max-w-[350px] h-full flex flex-col justify-start items-center
+                <div class="max-w-[350px] h-full flex flex-col justify-start items-center
                 sm:max-w-full
                 md:flex-row md:justify-center
-                md:items-center gap-3 " id="content">
+                md:items-center gap-3 
+                transition-opacity duration-300 ease-in-out" id="home">
                     <div class="border-3 border-white rounded-lg p-1">
                         <pre class="block text-[3px] leading-[1.5px]
                         sm:text-[3.5px] sm:leading-[1.7px]
@@ -270,9 +274,9 @@
  :         : :  :   : :: : :  : :: : :  :: : :       :      :   : :   :: :: :   :   :::
 </span>                                                                                                                                  
 </pre>
-                        <p class="font-mono w-full text-xl">Construyo aplicaciones web completas utilizando Java,
-                            Javascript y
-                            tecnologias modernas para
+                        <p class="font-mono w-full text-xl">Desarrollador de software especializado en aplicaciones web
+                            y entornos interactivos, C#, Java,
+                            Javascript y tecnologias modernas para
                             <span class="text-yellow-300">Frontend</span> y <span
                                 class="text-yellow-300">Backend.</span> <br>
                             Bogotá, Colombia
@@ -304,12 +308,13 @@
                         </div>
                     </div>
                 </div>
-                <div class=" max-w-[350px] h-full flex flex-col justify-start items-center
-                sm:min-w-full
+                <div class="hidden max-w-full min-w-52 h-auto flex flex-col justify-start items-center opacity-0 
+                sm:max-w-full
                 md:flex-row md:justify-center md:items-center md:max-w-full
-                lg:max-w-full gap-3 " id="content">
+                lg:max-w-full gap-3 
+                transition-opacity duration-300 ease-in-out" id="about-me">
                     <aside class="w-full md:w-80 bg-black/30 flex flex-col rounded-lg border-2 border-white p-6 gap-6">
-                        <div class="flex flex-col w-full gap-4">
+                        <div class="hidden sm:flex flex-col w-full gap-4">
                             <pre class="font-mono text-blue-300 font-extrabold text-[8px] leading-[8px]">
   _____        __       
   \_   \_ __  / _| ___  
@@ -331,9 +336,10 @@
                             </div>
                         </div>
 
-                        <div class="bg-white w-11/12 h-px self-center"></div>
+                        <div class="hidden bg-white w-11/12 h-px self-center"></div>
 
-                        <div class="flex flex-col w-full gap-4">
+                        <div class="flex flex-col w-full gap-4 text-center 
+                        sm:text-start">
                             <pre class="font-mono text-blue-300 font-extrabold text-[8px] leading-[8px]"> __           _   _             
 / _\ ___  ___| |_(_) ___  _ __  
 \ \ / _ \/ __| __| |/ _ \| '_ \ 
@@ -341,58 +347,82 @@ _\ \  __/ (__| |_| | (_) | | | |
 \__/\___|\___|\__|_|\___/|_| |_|
                                         </pre>
                             <nav class="text-white font-mono">
-                                <ul class="flex flex-col justify-center items-center gap-1">
+                                <ul class="flex flex-col justify-e items-center gap-1">
                                     <button type="button"
-                                        class="px-3 py-2 hover:bg-white/15 w-full rounded-sm flex text-start">
+                                        class="px-3 py-2 hover:bg-white/15 w-full rounded-sm flex justify-center sm:justify-start">
                                         About
                                     </button>
                                     <button type="button"
-                                        class="px-3 py-2 hover:bg-white/15 w-full rounded-sm flex text-start">
+                                        class="px-3 py-2 hover:bg-white/15 w-full rounded-sm flex justify-center sm:justify-start">
                                         Experience
                                     </button>
                                     <button type="button"
-                                        class="px-3 py-2 hover:bg-white/15 w-full rounded-sm flex text-start">
+                                        class="px-3 py-2 hover:bg-white/15 w-full rounded-sm flex justify-center sm:justify-start">
                                         Skills
                                     </button>
                                 </ul>
                             </nav>
                         </div>
                     </aside>
-                    <section id="aboutMe"
-                        class="bg-black/30 border-2 border-white rounded-sm p-1 w-full max-w-3xl text-[11px] leading-4 sm:text-sm sm:leading-6 md:text-base md:leading-7">
+                    <section id="aboutMe" class="bg-black/30 border-2 border-white rounded-sm p-1 w-full max-w-lg text-[11px] leading-6 tracking-[0.1px] pr-4 scrollbar-thumb-red-50
+                        sm:text-xs sm:leading-6 
+                        md:text-xs md:leading-6">
                         <div class="grid grid-cols-[auto_1fr] items-start overflow-x-auto pl4">
-                            <span class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">1</span>
-                            <span class="font-mono text-white whitespace-nowrap"><span class="text-blue-400 pl-2">&lt;div</span> <span class="text-cyan-200">class=</span><span class="text-orange-300">"about-me"</span><span class="text-blue-400">&gt;</span></span>
-                            <span class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">2</span>
-                            <span class="font-mono text-white whitespace-nowrap"><span class="text-blue-400 pl-8">&lt;p&gt;</span></span>
-                            <span class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">3</span>
-                            <span class="font-mono text-white whitespace-nowrap"><span class="pl-12">Soy un desarrollador web enfocado en crear aplicaciones</span></span>
-                            <span class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">4</span>
-                            <span class="font-mono text-white whitespace-nowrap"><span class="pl-12">funcionales, intuitivas y atractivas, combinando sólidos</span></span>
-                            <span class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">5</span>
-                            <span class="font-mono text-white whitespace-nowrap"><span class="pl-12">conocimientos de programación con una visión orientada a</span></span>
-                            <span class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">6</span>
-                            <span class="font-mono text-white whitespace-nowrap"><span class="pl-12">crear soluciones centradas en las necesidades del usuario.</span></span>
-                            <span class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">7</span>
-                            <span class="font-mono text-white whitespace-nowrap"><span class="pl-12">Me caracterizo por buscar comprender el porqué detrás de</span></span>
-                            <span class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">8</span>
-                            <span class="font-mono text-white whitespace-nowrap"><span class="pl-12">las tecnologías y soluciones que utilizo, en lugar de</span></span>
-                            <span class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">9</span>
-                            <span class="font-mono text-white whitespace-nowrap"><span class="pl-12">limitarme únicamente a aplicarlas, lo que me permite</span></span>
-                            <span class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">10</span>
-                            <span class="font-mono text-white whitespace-nowrap"><span class="pl-12">aprender de forma más sólida y adaptarme constantemente a</span></span>
-                            <span class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">11</span>
-                            <span class="font-mono text-white whitespace-nowrap"><span class="pl-12">nuevas herramientas y tecnologías. Disfruto enfrentar</span></span>
-                            <span class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">12</span>
-                            <span class="font-mono text-white whitespace-nowrap"><span class="pl-12">problemas, analizar diferentes soluciones y transformar</span></span>
-                            <span class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">13</span>
-                            <span class="font-mono text-white whitespace-nowrap"><span class="pl-12">ideas en productos digitales que aporten valor y ofrezcan</span></span>
-                            <span class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">14</span>
-                            <span class="font-mono text-white whitespace-nowrap"><span class="pl-12">una buena experiencia al usuario.</span></span>
-                            <span class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">15</span>
-                            <span class="font-mono text-white whitespace-nowrap"><span class="pl-8 text-blue-400">&lt;/p&gt;</span></span>
-                            <span class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">16</span>
-                            <span class="font-mono text-white whitespace-nowrap"><span class="text-blue-400 pl-2">&lt;/div&gt;</span></span>
+                            <span
+                                class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">1</span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span
+                                    class="text-blue-400 sm:pl-2">&lt;div</span> <span
+                                    class="text-cyan-200">class=</span><span
+                                    class="text-orange-300">"about-me"</span><span
+                                    class="text-blue-400">&gt;</span></span>
+                            <span
+                                class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">2</span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span
+                                    class="text-blue-400 sm:pl-8">&lt;p&gt;</span></span>
+                            <span
+                                class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">3</span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span class="sm:pl-12">Soy desarrollador de software enfocado en crear </span></span>
+                            <span
+                                class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">4</span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span class="sm:pl-12">productos digitales funcionales, intuitivos y</span></span>
+                            <span
+                                class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">5</span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span class="sm:pl-12">atractivos, desde aplicaciones web hasta entornos</span></span>
+                            <span
+                                class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">6</span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1">
+                                <span class="sm:pl-12">interactivos.</span></span>
+                            <span
+                                class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">7</span> <span class="font-mono text-white whitespace-nowrap pl-1">
+                                <span class="sm:pl-12">Me caracteriza entender el porqué de las tecnologías</span></span>
+                            <span
+                                class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">8</span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span class="sm:pl-12"> que uso, lo que me permite aprender</span></span>
+                            <span
+                                class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">9</span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span class="sm:pl-12">rápido y adaptarme a nuevas herramientas y entornos.</span></span>
+                            <span
+                                class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">10</span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span class="sm:pl-12">Disfruto resolver problemas, evaluar alternativas</span></span>
+                            <span
+                                class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">11</span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span class="sm:pl-12">y convertir ideas en productos digitales que</span></span>
+                            <span
+                                class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">12</span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span class="sm:pl-12">generan valor, ya sea como aplicación</span></span>
+
+                            <span
+                                class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">13</span>
+                                <span class="font-mono text-white whitespace-nowrap pl-1"><span class="sm:pl-12">o como experiencia interactiva.</span></span>
+
+                            <span
+                                class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">13</span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span
+                                    class="sm:pl-8 text-blue-400">&lt;/p&gt;</span></span>
+                            <span
+                                class="font-mono text-gray-400 font-normal text-center border-r-2 border-white pr-3 pl-1">14</span>
+                            <span class="font-mono text-white whitespace-nowrap pl-1"><span
+                                    class="text-blue-400 sm:pl-2">&lt;/div&gt;</span></span>
                         </div>
                     </section>
                 </div>
