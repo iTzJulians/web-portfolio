@@ -22,7 +22,8 @@
                     </div>
                     <ul class="flex flex-row justify-center items-center gap-4 sm:gap-8 md:gap-14">
                         <li>
-                            <button type="button" id="navPrev" class="hover:bg-white/15 rounded-sm p-1 transition-colors">
+                            <button type="button" id="navPrev"
+                                class="hidden sm:block hover:bg-white/15 rounded-sm p-1 transition-colors">
                                 <svg width="28" height="28">
                                     <use href="./assets/sprite.svg#chevron-left"></use>
                                 </svg>
@@ -39,7 +40,8 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#projects" class="navSection flex w-auto h-auto p-1 transition-colors hover:bg-white/15 rounded-lg"
+                            <a href="#projects"
+                                class="navSection flex w-auto h-auto p-1 transition-colors hover:bg-white/15 rounded-lg"
                                 data-target="projects">
                                 <svg width="28" height="28">
                                     <use href="./assets/sprite.svg#folder"></use>
@@ -47,7 +49,8 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#about-me" class="navSection flex w-auto h-auto p-1 transition-colors hover:bg-white/15 rounded-lg"
+                            <a href="#about-me"
+                                class="navSection flex w-auto h-auto p-1 transition-colors hover:bg-white/15 rounded-lg"
                                 data-target="about-me">
                                 <svg width="28" height="28">
                                     <use href="./assets/sprite.svg#person"></use>
@@ -55,7 +58,8 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#contact" class="navSection flex w-auto h-auto p-1 transition-colors hover:bg-white/15 rounded-lg"
+                            <a href="#contact"
+                                class="navSection flex w-auto h-auto p-1 transition-colors hover:bg-white/15 rounded-lg"
                                 data-target="contact">
                                 <svg width="28" height="28">
                                     <use href="./assets/sprite.svg#contact-book"></use>
@@ -63,7 +67,8 @@
                             </a>
                         </li>
                         <li>
-<button type="button" id="navNext" class="hover:bg-white/15 rounded-sm p-1 transition-colors">
+                            <button type="button" id="navNext"
+                                class="hidden sm:block hover:bg-white/15 rounded-sm p-1 transition-colors">
                                 <svg width="28" height="28">
                                     <use href="./assets/sprite.svg#chevron-right"></use>
                                 </svg>
@@ -310,7 +315,8 @@
                                     <use href="./assets/sprite.svg#github"></use>
                                 </svg>
                             </a>
-                            <a href="https://www.linkedin.com/in/julian-castellanos-/" target="_blank" rel="noopener noreferrer" class="p-2 rounded-2xl bg-white/15 flex justify-center items-center h-14
+                            <a href="https://www.linkedin.com/in/julian-castellanos-/" target="_blank"
+                                rel="noopener noreferrer" class="p-2 rounded-2xl bg-white/15 flex justify-center items-center h-14
                                 hover:bg-white/30 transition-colors">
                                 <svg width="40" height="40">
                                     <use href="./assets/sprite.svg#linkedin"></use>
@@ -324,11 +330,12 @@
                 md:flex-row md:justify-center md:items-center md:max-w-full
                 lg:max-w-full gap-3 
                 transition-opacity duration-300 ease-in-out" id="projects">
-                    <div class="bg-black/30 border-2 border-white rounded-lg p-6 w-full max-w-lg font-mono text-white flex flex-col gap-4">
-                        
+                    <div
+                        class="bg-black/30 border-2 border-white rounded-lg p-6 w-full max-w-lg font-mono text-white flex flex-col gap-4">
+
                     </div>
                 </div>
-                <div class="hidden max-w-full min-w-52 h-auto flex flex-col justify-start items-center opacity-0 
+                <div class="hidden max-w-full min-w-52 w-full h-auto flex flex-col justify-start items-center opacity-0 
                 sm:max-w-full
                 md:flex-row md:justify-center md:items-center md:max-w-full
                 lg:max-w-full gap-3 
@@ -558,23 +565,28 @@ _\ \  __/ (__| |_| | (_) | | | |
                         </div>
                     </section>
                     <!-- SKILLS -->
-                    <section id="skills" class="hidden bg-black/30 border-2  border-white rounded-sm p-3  max-h-[480px] min-w-lg text-[11px] leading-6 tracking-[0.1px] flex flex-col justify-start items-center gap-2
+                    <section id="skills" class="hidden bg-black/30 border-2 min-w-52 w-full border-white rounded-sm p-3  max-h-[450px]  max-w-[700px] text-[11px] leading-6 tracking-[0.1px] flex flex-col justify-between items-center
                         sm:text-xs sm:leading-6 
                         md:text-xs md:leading-6">
                         <header
-                            class="font-mono text-white font-bold grid grid-cols-3 gap-20 px-5 py-3 w-full border-2 border-white text-start rounded-md">
-                            <span>Skill</span>
-                            <span>Level</span>
-                            <span>Category</span>
+                            class="font-mono text-white font-bold flex px-5 py-3 w-full border-2 border-white text-start rounded-md">
+                            <div class="grid grid-cols-3 gap-5 w-full justify-items-start">
+                                <span class="w-fit">Skill</span>
+                                <span class="w-fit">Level</span>
+                                <span class="w-fit">Category</span>
+                            </div>
                         </header>
                         <div
-                            class="items-container flex flex-col justify-center items-center gap-auto overflow-y-auto text-white font-mono font-light w-full">
+                            class="items-container flex flex-col justify-center items-start gap-auto overflow-y-auto text-white font-mono font-light w-full">
                             <div
-                                class="item grid grid-cols-3 gap-20 w-full p-3 rounded-md hover:bg-white/15 transition-colors duration-200 ease-in">
+                                class="item grid grid-cols-3 gap-5 w-full justify-items-start p-3 rounded-md hover:bg-white/15 transition-colors duration-200 ease-in">
                                 <div class="skill">
-                                    <span>
-                                        1.
-                                    </span>
+                                    <svg width="16" height="16" class="inline-block align-middle mr-1">
+                                        <use href="./assets/sprite.svg#html"></use>
+                                    </svg>
+                                    <svg width="16" height="16" class="inline-block align-middle mr-1">
+                                        <use href="./assets/sprite.svg#css"></use>
+                                    </svg>
                                     <span>
                                         HTML/CSS
                                     </span>
@@ -584,11 +596,11 @@ _\ \  __/ (__| |_| | (_) | | | |
 
                             </div>
                             <div
-                                class="item grid grid-cols-3 gap-20 w-full p-3 rounded-md hover:bg-white/15 transition-colors duration-200 ease-in">
+                                class="item grid grid-cols-3 gap-5 w-full justify-items-start p-3 rounded-md hover:bg-white/15 transition-colors duration-200 ease-in">
                                 <div class="skill">
-                                    <span>
-                                        2.
-                                    </span>
+                                    <svg width="16" height="16" class="inline-block align-middle mr-1">
+                                        <use href="./assets/sprite.svg#javascript"></use>
+                                    </svg>
                                     <span>
                                         Javascript
                                     </span>
@@ -598,11 +610,11 @@ _\ \  __/ (__| |_| | (_) | | | |
 
                             </div>
                             <div
-                                class="item grid grid-cols-3 gap-20 w-full p-3 rounded-md hover:bg-white/15 transition-colors duration-200 ease-in">
+                                class="item grid grid-cols-3 gap-5 w-full justify-items-start p-3 rounded-md hover:bg-white/15 transition-colors duration-200 ease-in">
                                 <div class="skill">
-                                    <span>
-                                        3.
-                                    </span>
+                                    <svg width="16" height="16" class="inline-block align-middle mr-1">
+                                        <use href="./assets/sprite.svg#postgresql"></use>
+                                    </svg>
                                     <span>
                                         PostgreSQL
                                     </span>
@@ -612,11 +624,11 @@ _\ \  __/ (__| |_| | (_) | | | |
 
                             </div>
                             <div
-                                class="item grid grid-cols-3 gap-20 w-full p-3 rounded-md hover:bg-white/15 transition-colors duration-200 ease-in">
+                                class="item grid grid-cols-3 gap-5 w-full justify-items-start p-3 rounded-md hover:bg-white/15 transition-colors duration-200 ease-in">
                                 <div class="skill">
-                                    <span>
-                                        4.
-                                    </span>
+                                    <svg width="16" height="16" class="inline-block align-middle mr-1">
+                                        <use href="./assets/sprite.svg#java"></use>
+                                    </svg>
                                     <span>
                                         Java
                                     </span>
@@ -626,25 +638,25 @@ _\ \  __/ (__| |_| | (_) | | | |
 
                             </div>
                             <div
-                                class="item grid grid-cols-3 gap-20 w-full p-3 rounded-md hover:bg-white/15 transition-colors duration-200 ease-in">
+                                class="item grid grid-cols-3 gap-5 w-full justify-items-start p-3 rounded-md hover:bg-white/15 transition-colors duration-200 ease-in">
                                 <div class="skill">
-                                    <span>
-                                        5.
-                                    </span>
+                                    <svg width="16" height="16" class="inline-block align-middle mr-1">
+                                        <use href="./assets/sprite.svg#csharp"></use>
+                                    </svg>
                                     <span>
                                         C#
                                     </span>
                                 </div>
                                 <span>Proficency</span>
-                                <span class="text-gray-400">Backend/Game dev</span>
+                                <span class="text-gray-400">Backend</span>
 
                             </div>
                             <div
-                                class="item grid grid-cols-3 gap-20 w-full p-3 rounded-md hover:bg-white/15 transition-colors duration-200 ease-in">
+                                class="item grid grid-cols-3 gap-5 w-full justify-items-start p-3 rounded-md hover:bg-white/15 transition-colors duration-200 ease-in">
                                 <div class="skill">
-                                    <span>
-                                        6.
-                                    </span>
+                                    <svg width="16" height="16" class="inline-block align-middle mr-1">
+                                        <use href="./assets/sprite.svg#spring"></use>
+                                    </svg>
                                     <span>
                                         Spring
                                     </span>
@@ -654,11 +666,11 @@ _\ \  __/ (__| |_| | (_) | | | |
 
                             </div>
                             <div
-                                class="item grid grid-cols-3 gap-20 w-full p-3 rounded-md hover:bg-white/15 transition-colors duration-200 ease-in">
+                                class="item grid grid-cols-3 gap-5 w-full justify-items-start p-3 rounded-md hover:bg-white/15 transition-colors duration-200 ease-in">
                                 <div class="skill">
-                                    <span>
-                                        7.
-                                    </span>
+                                    <svg width="16" height="16" class="inline-block align-middle mr-1">
+                                        <use href="./assets/sprite.svg#unity"></use>
+                                    </svg>
                                     <span>
                                         Unity
                                     </span>
@@ -668,11 +680,11 @@ _\ \  __/ (__| |_| | (_) | | | |
 
                             </div>
                             <div
-                                class="item grid grid-cols-3 gap-20 w-full p-3 rounded-md hover:bg-white/15 transition-colors duration-200 ease-in">
+                                class="item grid grid-cols-3 gap-5 w-full justify-items-start p-3 rounded-md hover:bg-white/15 transition-colors duration-200 ease-in">
                                 <div class="skill">
-                                    <span>
-                                        8.
-                                    </span>
+                                    <svg width="16" height="16" class="inline-block align-middle mr-1">
+                                        <use href="./assets/sprite.svg#tailwind"></use>
+                                    </svg>
                                     <span>
                                         Tailwind
                                     </span>
@@ -681,14 +693,14 @@ _\ \  __/ (__| |_| | (_) | | | |
                                 <span class="text-gray-400">Frontend</span>
 
                             </div>
-                            
-                            </div>
+
                         </div>
                 </div>
-
-                </section>
         </div>
-        </main>
+
+        </section>
+    </div>
+    </main>
     </div>
     </div>
 </body>
