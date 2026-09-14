@@ -5,6 +5,7 @@ const nav = document.getElementById("mainNav");
 const homePage = document.querySelector("#home");
 const aboutMePage = document.querySelector("#about-me");
 const projectsPage = document.querySelector("#projects");
+const contactPage = document.querySelector("#contact");
 const about = document.querySelector("#about");
 const experience = document.querySelector("#experience");
 const skills = document.querySelector("#skills");
@@ -86,6 +87,10 @@ function navigateTo(target) {
         }
         case "projects": {
             transitionMain(currentPage, projectsPage);
+            break;
+        }
+        case "contact": {
+            transitionMain(currentPage, contactPage);
             break;
         }
     }

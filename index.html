@@ -325,14 +325,81 @@
                         </div>
                     </div>
                 </div>
-                <div class="hidden max-w-full min-w-52 h-auto flex flex-col justify-start items-center opacity-0 
-                sm:max-w-full
-                md:flex-row md:justify-center md:items-center md:max-w-full
-                lg:max-w-full gap-3 
+                <div class="hidden w-full flex-1 min-h-0 flex flex-col items-center justify-center opacity-0 gap-3
                 transition-opacity duration-300 ease-in-out" id="projects">
-                    <div
-                        class="bg-black/30 border-2 border-white rounded-lg p-6 w-full max-w-lg font-mono text-white flex flex-col gap-4">
-
+                    <div class="w-full max-w-4xl h-full min-h-0 grid grid-cols-1 md:grid-cols-2 md:grid-rows-[1.3fr_1fr] gap-3 font-mono text-white">
+                        <a href="https://github.com/generation-classes/Safety-for-people" target="_blank"
+                            rel="noopener noreferrer"
+                            class="group bg-black/30 border-2 border-white rounded-lg overflow-hidden flex flex-col gap-3 hover:bg-white/10 transition-colors md:col-span-2 h-full min-h-0 md:flex-row md:gap-4">
+                            <div
+                                class="relative w-full h-48 md:w-3/5 md:h-full min-h-0 overflow-hidden">
+                                <img src="./assets/safety%20mockup.png" alt="Captura de Safety for People"
+                                    class="w-full h-full object-cover grayscale transition duration-500 group-hover:grayscale-0">
+                            </div>
+                            <div class="flex flex-col gap-3 flex-1 min-h-0 p-4">
+                                <h2 class="text-2xl font-bold text-yellow-300">Safety for People</h2>
+                                <p class="text-sm leading-6 text-gray-300">
+                                    E-commerce enfocado en equipos de seguridad, desarrollado como proyecto final en
+                                    grupo
+                                    del bootcamp de Generation Colombia. Carrito de compras, autenticación y panel de
+                                    administración.
+                                </p>
+                                <div class="flex flex-wrap items-center gap-x-2 gap-y-1 mt-2 text-xs text-gray-400">
+                                    <span class="underline-offset-4 decoration-white/40 hover:underline hover:text-white transition-colors">javascript</span>
+                                    <span class="text-gray-600">·</span>
+                                    <span class="underline-offset-4 decoration-white/40 hover:underline hover:text-white transition-colors">java</span>
+                                    <span class="text-gray-600">·</span>
+                                    <span class="underline-offset-4 decoration-white/40 hover:underline hover:text-white transition-colors">postgresql</span>
+                                </div>
+                                <span
+                                    class="mt-auto pt-4 flex items-center gap-2 text-blue-300 hover:text-white transition-colors">
+                                    <svg width="20" height="20">
+                                        <use href="./assets/sprite.svg#github"></use>
+                                    </svg>
+                                    Ver repositorio
+                                </span>
+                            </div>
+                        </a>
+                        <a href="https://github.com/lizethcarosilva/hackathon_uno" target="_blank"
+                            rel="noopener noreferrer"
+                            class="group bg-black/30 border-2 border-white rounded-lg overflow-hidden flex flex-col gap-3 hover:bg-white/10 transition-colors h-full min-h-0">
+                            <div
+                                class="relative w-full flex-1 min-h-0 overflow-hidden">
+                                <img src="./assets/Sailor%20food.jpg" alt="Captura de Sailor Food"
+                                    class="w-full h-full object-cover grayscale transition duration-500 group-hover:grayscale-0">
+                            </div>
+                            <div class="flex flex-col gap-3 p-4">
+                                <h3 class="text-xl font-bold text-yellow-300">Sailor Food</h3>
+                                <p class="text-sm leading-5 text-gray-400">
+                                    Landing page con temática anime-japonesa de comida japonesa, hecha para una hackatón
+                                    de 8 horas.
+                                </p>
+                                <div class="flex flex-wrap items-center gap-x-2 gap-y-1 mt-2 text-xs text-gray-400">
+                                    <span class="underline-offset-4 decoration-white/40 hover:underline hover:text-white transition-colors">javascript</span>
+                                    <span class="text-gray-600">·</span>
+                                    <span class="underline-offset-4 decoration-white/40 hover:underline hover:text-white transition-colors">css</span>
+                                    <span class="text-gray-600">·</span>
+                                    <span class="underline-offset-4 decoration-white/40 hover:underline hover:text-white transition-colors">html</span>
+                                </div>
+                                <span
+                                    class="mt-auto pt-4 flex items-center gap-2 text-blue-300 hover:text-white transition-colors">
+                                    <svg width="20" height="20">
+                                        <use href="./assets/sprite.svg#github"></use>
+                                    </svg>
+                                    Ver repositorio
+                                </span>
+                            </div>
+                        </a>
+                        <div class="group bg-black/30 border-2 border-white rounded-lg overflow-hidden flex flex-col h-full min-h-0 hover:bg-white/10 transition-colors">
+                            <div class="relative w-full flex-1 min-h-0 overflow-hidden">
+                                <img src="./assets/en%20construccion.png" alt="Proyecto en construcción"
+                                    class="w-full h-full object-contain grayscale transition duration-500 group-hover:grayscale-0">
+                            </div>
+                            <div class="flex flex-col gap-3 p-4">
+                                <h3 class="text-xl font-bold text-yellow-300">Próximo proyecto</h3>
+                                <p class="text-sm leading-5 text-gray-400">Proyecto en construcción...</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="hidden max-w-full min-w-52 w-full h-auto flex flex-col justify-start items-center opacity-0 
@@ -565,7 +632,7 @@ _\ \  __/ (__| |_| | (_) | | | |
                         </div>
                     </section>
                     <!-- SKILLS -->
-                    <section id="skills" class="hidden bg-black/30 border-2 min-w-52 w-full border-white rounded-sm p-3  max-h-[450px]  max-w-[700px] text-[11px] leading-6 tracking-[0.1px] flex flex-col justify-between items-center
+                    <section id="skills" class="hidden bg-black/30 border-2 min-w-52 w-full border-white rounded-sm p-3 gap-3 max-h-[450px]  max-w-[700px] text-[11px] leading-6 tracking-[0.1px] flex flex-col justify-between items-center
                         sm:text-xs sm:leading-6 
                         md:text-xs md:leading-6">
                         <header
@@ -577,7 +644,7 @@ _\ \  __/ (__| |_| | (_) | | | |
                             </div>
                         </header>
                         <div
-                            class="items-container flex flex-col justify-center items-start gap-auto overflow-y-auto text-white font-mono font-light w-full">
+                            class="items-container flex flex-col justify-start items-start gap-auto overflow-y-auto text-white font-mono font-light w-full">
                             <div
                                 class="item grid grid-cols-3 gap-5 w-full justify-items-start p-3 rounded-md hover:bg-white/15 transition-colors duration-200 ease-in">
                                 <div class="skill">
@@ -695,10 +762,39 @@ _\ \  __/ (__| |_| | (_) | | | |
                             </div>
 
                         </div>
-                </div>
-        </div>
-
         </section>
+    </div>
+                <div class="hidden w-full flex-1 min-h-0 flex flex-col items-center justify-center opacity-0 gap-3
+                transition-opacity duration-300 ease-in-out" id="contact">
+                    <div class="w-full max-w-4xl grid grid-cols-1 md:grid-cols-3 gap-3 font-mono text-white">
+            <a href="https://github.com/iTzJulians" target="_blank" rel="noopener noreferrer"
+                class="bg-black/30 border-2 border-white rounded-lg p-6 flex flex-col items-center justify-center gap-3 hover:bg-white/10 transition-colors min-h-24">
+                <svg width="40" height="40">
+                    <use href="./assets/sprite.svg#github"></use>
+                </svg>
+                <h3 class="text-xl font-bold text-yellow-300">GitHub</h3>
+                <p class="text-sm text-gray-400">@iTzJulians</p>
+            </a>
+            <a href="https://www.linkedin.com/in/julian-castellanos-/" target="_blank"
+                rel="noopener noreferrer"
+                class="bg-black/30 border-2 border-white rounded-lg p-6 flex flex-col items-center justify-center gap-3 hover:bg-white/10 transition-colors min-h-24">
+                <svg width="40" height="40">
+                    <use href="./assets/sprite.svg#linkedin"></use>
+                </svg>
+                <h3 class="text-xl font-bold text-yellow-300">LinkedIn</h3>
+                <p class="text-sm text-gray-400">julian castellanos</p>
+            </a>
+            <a href="mailto:itzjulian14@gmail.com"
+                class="bg-black/30 border-2 border-white rounded-lg p-6 flex flex-col items-center justify-center gap-3 hover:bg-white/10 transition-colors min-h-24">
+                <svg width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5"
+                    viewBox="0 0 24 24">
+                    <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                    <path d="M3 7l9 6 9-6"></path>
+                </svg>
+                <h3 class="text-xl font-bold text-yellow-300">Email</h3>
+                <p class="text-sm text-gray-400">itzjulian14@gmail.com</p>
+            </a>
+        </div>
     </div>
     </main>
     </div>
